@@ -1,0 +1,22 @@
+.formHeader {
+    /* La magia de FLEX */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* Alto de la barra, en tu caso sería 50px */
+    height: 100px;
+    
+    /* Color para el demo */
+    background-color:#DAE1BC;
+  }
+  
+  .navArrow2 {
+    position: absolute;
+    color: white;
+    left: 25px;
+  }
+  
+.tituloTab {
+    color: white;
+  }
