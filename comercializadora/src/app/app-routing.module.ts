@@ -20,7 +20,10 @@ const routes: Routes = [
     path:  'venta', component: VentaComponent
   },
   {
-    path:  'principal', component: PrincipalComponent
+    path:  'principal', component: PrincipalComponent, pathMatch:'full'
+  },
+  {
+    path: '**', redirectTo: 'principal'
   }
 
 ];
