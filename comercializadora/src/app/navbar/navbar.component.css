@@ -11,12 +11,8 @@
     background-color:#DAE1BC;
   }
   
-  .navArrow2 {
-    position: absolute;
-    color: white;
-    left: 25px;
-  }
+.textA{
+  text-align: center;
+  font-size: 15px;
+}
   
-.tituloTab {
-    color: white;
-  }
