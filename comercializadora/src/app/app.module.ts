@@ -11,6 +11,7 @@ import { ProductoComponent } from './producto/producto.component';
 import { VentaComponent } from './venta/venta.component';
 import { MenuComponent } from './menu/menu.component';
 import { PrincipalComponent } from './principal/principal.component';
+import { AdeudoComponent } from './adeudo/adeudo.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { PrincipalComponent } from './principal/principal.component';
     ProductoComponent,
     VentaComponent,
     MenuComponent,
-    PrincipalComponent
+    PrincipalComponent,
+    AdeudoComponent
   ],
   imports: [
     BrowserModule,

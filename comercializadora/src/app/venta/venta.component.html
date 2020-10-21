@@ -1,106 +1,116 @@
-<div class="container">
-    <div class="row">
-        <div class="col-md-2">
-            <app-menu></app-menu>
+<div class="col-lg-10" style="background: url('../../assets/img/logoMA.png'); width: 100%; height: 50vh;">
+    <h3> 
+        <img src="../../assets/img/punto-de-venta.png" alt="logoCliente" class="tamImg">
+        Venta
+    </h3>
+    <br>
+
+    
+
+    <div class="col-lg-12">
+
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="#">Venta 1</a></li>
+            <li class=""><a href="#">Venta 2</a></li>
+            <li class=""><a href="#">Venta 3</a></li>
+            <li class=""><a href="#">Venta 4</a></li>
+            <li class=""><a href="#">Venta 5</a></li>
+        </ul>
+        <br>
+
+        <div class="col-lg-4">
+            <table class="table table-hover ">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Fruta</th>
+                        <th>Costo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img class="card-img-top" src="../../assets/img/producto_1.png" style="width:40px; "></td>
+                        <td>Naranja</td>
+                        <td>$10.00</td>
+                    </tr>
+
+                    <tr>
+                        <td><img class="card-img-top" src="../../assets/img/producto_1.png" style="width:40px; "></td>
+                        <td>Naranja</td>
+                        <td>$10.00</td>
+                    </tr>
+
+                    <tr>
+                        <td><img class="card-img-top" src="../../assets/img/producto_1.png" style="width:40px; "></td>
+                        <td>Naranja</td>
+                        <td>$10.00</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-        <div class="col-md-10">
-            <br><br>
-            <div class="col-md-1 col-lg-1 col-xl-1 ">
-                <img src="../../assets/img/punto-de-venta.png" alt="logo" style="width:60px; ">
-            </div>
 
-            <div class="col-md-11 col-lg-11 col-xl-11 ">
-                <h5>VENTA</h5>
-            </div>
+        <div class="col-lg-8">
 
 
+            <form action="">
 
-            <br><br><br><br>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <label for="nombre">Empleado*:</label>
+                        <select class="form-control" id="listaEmpleados">
+                            <option>Maricruz Gonzalez</option>
+                            <option>Maricruz Gonzalez</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-6">
+                        <label for="nombre">Cliente*:</label>
+                        <select class="form-control" id="listaClientes">
+                            <option>Maricruz Gonzalez</option>
+                            <option>Maricruz Gonzalez</option>
+                        </select>
+                    </div>
 
+                </div>
 
-
-
-
-
-
-            <div class="col-lg-10">
-
-                <ul class="nav nav-tabs">
-                    <li class="active"><a href="#">Venta 1</a></li>
-                    <li class=""><a href="#">Venta 2</a></li>
-                    <li class=""><a href="#">Venta 3</a></li>
-                    <li class=""><a href="#">Venta 4</a></li>
-                    <li class=""><a href="#">Venta 5</a></li>
-                </ul>
                 <br>
 
-                <div class="col-lg-4">
-                    <table class="table table-hover">
-                        <thead>
-                            <tr>
-                                <th></th>
-                                <th>Fruta</th>
-                                <th>Costo</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><img class="card-img-top" src="../../assets/img/producto_1.png" style="width:40px; "></td>
-                                <td>Naranja</td>
-                                <td>$10.00</td>
-                            </tr>
+                <table class="table table-hover table-striped table-bordered colorB">
+                    <thead>
+                        <tr>
+                            <th class="tamCol" >KG</th>
+                            <th >Fruta</th>
+                            <th class="tamCol">Costo</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="cantidadP">2</td>
+                            <td id="nombreP">Naranja</td>
+                            <td id="costoP">$10.00</td>
+                        </tr>
 
-                            <tr>
-                                <td><img class="card-img-top" src="../../assets/img/producto_1.png" style="width:40px; "></td>
-                                <td>Naranja</td>
-                                <td>$10.00</td>
-                            </tr>
+                        <tr>
+                            <td></td>
+                            <td id="totalVenta" style="text-align: right;">Total:</td>
+                            <td>$10.00</td>
+                        </tr>
+                    </tbody>
+                </table>
 
-                            <tr>
-                                <td><img class="card-img-top" src="../../assets/img/producto_1.png" style="width:40px; "></td>
-                                <td>Naranja</td>
-                                <td>$10.00</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-lg-6 col-xl-6" style="text-align:right;">
+                        <button type="button" class="btn btn-info">imprimir</button>
+                    </div>
                 </div>
 
-                <div class="col-lg-8">
-
-
-                    <form action="">
-
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <label for="nombre">Empleado*:</label>
-                                <select class="form-control">
-                      <option>Maricruz Gonzalez</option>
-                  </select>
-                            </div>
-                            <div class="col-lg-6">
-                                <label for="nombre">Empleado*:</label>
-                                <select class="form-control">
-                    <option>Maricruz Gonzalez</option>
-                </select>
-                            </div>
-
-                        </div>
-
-                        <br>
-
-                        <div class="row">
-                            <div class="col-md-6 col-sm-6 col-lg-6 col-xl-6" style="text-align:right;">
-                                <button type="button" class="btn btn-info">imprimir</button>
-                            </div>
-                        </div>
-
-                    </form>
-                </div>
-
-
-            </div>
-
-
+            </form>
         </div>
+
+
     </div>
+
+
+
+
 </div>

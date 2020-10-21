@@ -8,11 +8,9 @@
 }
 
 .tamCol{
-    width: 80px;
+    width: 100px;
 }
 
-.fruta{
-    width:60%; 
-    height: 65px;
-    text-align: center;
+.tamColD{
+    width: 60px;
 }
