@@ -12,6 +12,9 @@ import { VentaComponent } from './venta/venta.component';
 import { MenuComponent } from './menu/menu.component';
 import { PrincipalComponent } from './principal/principal.component';
 import { AdeudoComponent } from './adeudo/adeudo.component';
+import { ClienteAMComponent } from './cliente-am/cliente-am.component';
+import { EmpleadoAMComponent } from './empleado-am/empleado-am.component';
+import { ProductoAMComponent } from './producto-am/producto-am.component';
 
 
 @NgModule({
@@ -24,7 +27,10 @@ import { AdeudoComponent } from './adeudo/adeudo.component';
     VentaComponent,
     MenuComponent,
     PrincipalComponent,
-    AdeudoComponent
+    AdeudoComponent,
+    ClienteAMComponent,
+    EmpleadoAMComponent,
+    ProductoAMComponent
   ],
   imports: [
     BrowserModule,
