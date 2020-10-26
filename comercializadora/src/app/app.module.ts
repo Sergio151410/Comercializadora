@@ -3,18 +3,21 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ClienteComponent } from './cliente/cliente.component';
-import { NavbarComponent } from './navbar/navbar.component';
+import { ClienteComponent } from './components/cliente/cliente.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { EmpleadoComponent } from './empleado/empleado.component';
-import { ProductoComponent } from './producto/producto.component';
-import { VentaComponent } from './venta/venta.component';
-import { MenuComponent } from './menu/menu.component';
-import { PrincipalComponent } from './principal/principal.component';
-import { AdeudoComponent } from './adeudo/adeudo.component';
-import { ClienteAMComponent } from './cliente-am/cliente-am.component';
-import { EmpleadoAMComponent } from './empleado-am/empleado-am.component';
-import { ProductoAMComponent } from './producto-am/producto-am.component';
+import { EmpleadoComponent } from './components/empleado/empleado.component';
+import { ProductoComponent } from './components/producto/producto.component';
+import { VentaComponent } from './components/venta/venta.component';
+import { MenuComponent } from './components/menu/menu.component';
+import { PrincipalComponent } from './components/principal/principal.component';
+import { AdeudoComponent } from './components/adeudo/adeudo.component';
+import { ClienteAMComponent } from './components/cliente-am/cliente-am.component';
+import { EmpleadoAMComponent } from './components/empleado-am/empleado-am.component';
+import { ProductoAMComponent } from './components/producto-am/producto-am.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MaterialModule} from './modules/material/material.module'
+
 
 
 @NgModule({
@@ -35,7 +38,9 @@ import { ProductoAMComponent } from './producto-am/producto-am.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    BrowserAnimationsModule,
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
