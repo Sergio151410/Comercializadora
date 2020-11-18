@@ -1,56 +1,41 @@
-<div class="col-lg-10" style="background: url('../../assets/img/logoMA.png'); width: 100%; height: 50vh;">
+<app-menu></app-menu>
 
+<div class="container">
+  
+    <h3>
+        <img src="../../../assets/img/agenda.png" alt="logoCliente" class="tamImg"> Cliente
+    </h3>
 
-    <br>
-    <br>
-
-    <mat-form-field class="search">
-        <mat-icon matPrefix>search</mat-icon>
-        <mat-label>Buscar</mat-label>
-        <input matInput (keyup)="applyFilter($event)" placeholder="Cliente" #input>
-    </mat-form-field>
-    <button mat-mini-fab color="accent" (click)="agregar($event);">
-        <mat-icon>add</mat-icon>
-      </button>
-
-    <div class="mat-elevation-z8">
-        <table mat-table [dataSource]="dataSource" matSort>
-
-
-
-
-            <!-- Name Column -->
-            <ng-container matColumnDef="nombre">
-                <th mat-header-cell *matHeaderCellDef mat-sort-header> Nombre </th>
-                <td mat-cell *matCellDef="let row"> {{row.nombre}} </td>
-            </ng-container>
-
-            <ng-container matColumnDef="opciones">
-                <th mat-header-cell *matHeaderCellDef mat-sort-header> Opciones </th>
-                <td mat-cell *matCellDef="let row">
-                    <div class="example-button-row">
-                        <button mat-mini-fab color="primary" (click)="editar($event, row.id);">
-                            <mat-icon>edit</mat-icon>
-                          </button>
-                        <button mat-mini-fab color="warn" (click)="eliminar($event, row.id, row.nombre); ">
-                        <mat-icon>delete</mat-icon>
-                      </button>
-                    </div>
-                </td>
-
-            </ng-container>
-
-
-            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-
-            <!-- Row shown when there is no matching data. -->
-            <tr class="mat-row " *matNoDataRow>
-                <td class="mat-cell " colspan="4 ">No se encuentran resultados "{{input.value}} "</td>
-            </tr>
-        </table>
-
-        <mat-paginator [pageSizeOptions]="[5, 10, 25, 100] "></mat-paginator>
+    <div class="col-md-12 col-lg-12 col-xl-12" style="text-align: right;">
+        <a routerLink='/cliente-am' class="btn btn-info">
+            <img src="../../assets/img/agregar-usuario.png" class="tamId"> Agregar
+        </a>
     </div>
 
-</div>
+    <table class="table table-hover colorB">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Nombre</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td class="">
+                    <a href="#" class="btn btn-warning">
+                      <img src="../../assets/img/editar.png" class="tamI"> Editar
+                    </a>
+                    &nbsp;
+                    <button type="button" class="btn btn-danger">
+                        <img src="../../assets/img/basura.png" class="tamI"> 
+                        Eliminar
+                    </button>
+                </td>
+
+                <td class="tamCol" id="listaEmpleados">Maricruz Gonzalez Ledesma</td>
+            </tr>
+        </tbody>
+    </table>
+
+  </div>

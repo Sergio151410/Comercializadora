@@ -16,7 +16,8 @@ import { ClienteAMComponent } from './components/cliente-am/cliente-am.component
 import { EmpleadoAMComponent } from './components/empleado-am/empleado-am.component';
 import { ProductoAMComponent } from './components/producto-am/producto-am.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MaterialModule} from './modules/material/material.module'
+import {MaterialModule} from './modules/material/material.module';
+
 
 
 
@@ -34,6 +35,7 @@ import {MaterialModule} from './modules/material/material.module'
     ClienteAMComponent,
     EmpleadoAMComponent,
     ProductoAMComponent
+    
   ],
   imports: [
     BrowserModule,

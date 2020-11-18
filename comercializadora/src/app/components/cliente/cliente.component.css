@@ -1,6 +1,6 @@
 .tamImg{
-    width: 25px;
-    height: 25px;   
+    width: 40px;
+    height: 40px;   
 }
 
 .colorB{
@@ -8,12 +8,7 @@
 }
 
 .tamCol{
-    width: 80px;
-}
-
-.tamI{
-    width: 16px;
-    height: 16px;
+    width: 100%;
 }
 
 .tamI{

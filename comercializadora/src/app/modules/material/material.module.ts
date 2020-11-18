@@ -6,8 +6,13 @@ import {MatPaginatorModule } from '@angular/material/paginator';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatIconModule} from '@angular/material/icon'
-
-
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatMenuModule} from '@angular/material/menu';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import {MatSliderModule} from '@angular/material/slider';
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
+import {MatCardModule} from '@angular/material/card';
 
 
 @NgModule({
@@ -19,8 +24,14 @@ import {MatIconModule} from '@angular/material/icon'
     MatPaginatorModule,
     MatFormFieldModule,
     MatInputModule,
-    MatIconModule
-    
+    MatIconModule,
+    MatSidenavModule,
+    MatDatepickerModule,
+    MatMenuModule,
+    MatCheckboxModule,
+    MatSliderModule,
+    MatButtonToggleModule,
+    MatCardModule
     
   ],
   exports:
@@ -30,7 +41,14 @@ import {MatIconModule} from '@angular/material/icon'
     MatPaginatorModule,
     MatFormFieldModule,
     MatInputModule,
-    MatIconModule
+    MatIconModule,
+    MatSidenavModule,
+    MatDatepickerModule,
+    MatMenuModule,
+    MatCheckboxModule,
+    MatSliderModule,
+    MatButtonToggleModule,
+    MatCardModule
     
   ]
 })

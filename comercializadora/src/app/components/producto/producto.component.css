@@ -18,10 +18,19 @@
 }
 
 .tamI{
-    width: 16px;
-    height: 16px;
+    width: 80px;
+    height: 80px;
 }
 .tamId{
     width: 18px;
     height: 18px;
 }
+
+.example-card {
+    max-width: 160px;
+  }
+  
+  .example-header-image {
+    height: 100px;
+    background-size: cover;
+  }
