@@ -1,0 +1,98 @@
+<div class="container">
+    <div class="row">
+        <div></div>
+        <div class="col-lg-4">
+            <div class="table-wrapper-scroll-y my-custom-scrollbar">
+                <table class="table table-hover scrollTable">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Fruta</th>
+                            <th>Precio</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let fruta of frutas" (click)="verFruta($event, fruta)">
+                            <td><img class="card-img-top" src="{{fruta.imagen}}" style="width:40px; "></td>
+                            <td>{{fruta.nombre}}</td>
+                            <td>{{fruta.precio}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="col-lg-8">
+
+
+
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <label fVenta="nombre">Empleado*:</label>
+                    <select class="form-control" id="listaEmpleados">
+                    <option>Maricruz Gonzalez</option>
+                    <option>Maricruz Gonzalez</option>
+                </select>
+                </div>
+                <div class="col-lg-6">
+                    <label for="nombre">Cliente*:</label>
+                    <select class="form-control" id="listaClientes">
+                    <option>Maricruz Gonzalez</option>
+                    <option>Maricruz Gonzalez</option>
+                </select>
+                </div>
+
+            </div>
+
+            <br>
+            <div *ngIf="venta.length === 0" class="alert alert-warning centerTex" role="alert">
+                No se han agregado productos
+            </div>
+            <table *ngIf="venta.length > 0" class="table table-hover table-striped table-bordered colorB">
+                <thead>
+                    <tr>
+                        <th class="tamCol">Fruta</th>
+                        <th>KG</th>
+                        <th class="tamCol">Precio</th>
+                        <th class="tamCol">Total</th>
+                        <th class="tamCol"></th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let v of venta">
+                        <td id="nombreP">{{v.fruta.nombre}}</td>
+                        <td id="cantidadP">{{v.cantidad}}</td>
+                        <td id="costoP">{{v.costo | currency}}</td>
+                        <td id="total">{{v.total | currency}}</td>
+                        <td id="">
+                            <button mat-icon-button aria-label="Eliminar" color="warn" (click)="eliminarProducto(v);">
+                                    <mat-icon>delete</mat-icon>
+                                  </button>
+                        </td>
+                    </tr>
+
+                    <tr>
+
+                        <td colspan="3" id="totalVenta" style="text-align: right;">Gran Total:</td>
+                        <td>{{gTotal | currency}}</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="row" *ngIf="venta.length > 0">
+                <div class="col-md-6 col-sm-6 col-lg-6 col-xl-6" style="text-align:right;">
+                    <button type="button" class="btn btn-success" (click)="resumenVenta();">
+                    <img src="../../assets/img/aceptar.png" class="tamId">                            
+                    Terminar
+                </button>
+                    <button type="button" class="btn btn-warning" (click)="vaciarCanasta();">
+                    Limpiar Canasta
+                </button>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>

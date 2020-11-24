@@ -5,7 +5,9 @@ import {MatTableModule} from '@angular/material/table';
 import {MatPaginatorModule } from '@angular/material/paginator';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
-import {MatIconModule} from '@angular/material/icon'
+import {MatIconModule} from '@angular/material/icon';
+import {MatTabsModule} from '@angular/material/tabs';
+import {MatDialogModule} from '@angular/material/dialog';
 
 
 
@@ -19,7 +21,9 @@ import {MatIconModule} from '@angular/material/icon'
     MatPaginatorModule,
     MatFormFieldModule,
     MatInputModule,
-    MatIconModule
+    MatIconModule,
+    MatTabsModule,
+    MatDialogModule
     
     
   ],
@@ -30,7 +34,9 @@ import {MatIconModule} from '@angular/material/icon'
     MatPaginatorModule,
     MatFormFieldModule,
     MatInputModule,
-    MatIconModule
+    MatIconModule,
+    MatTabsModule,
+    MatDialogModule
     
   ]
 })

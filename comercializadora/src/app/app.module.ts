@@ -16,7 +16,9 @@ import { ClienteAMComponent } from './components/cliente-am/cliente-am.component
 import { EmpleadoAMComponent } from './components/empleado-am/empleado-am.component';
 import { ProductoAMComponent } from './components/producto-am/producto-am.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MaterialModule} from './modules/material/material.module'
+import {MaterialModule} from './modules/material/material.module';
+import { ItemVentaComponent } from './components/item-venta/item-venta.component';
+import { ResumenComponent } from './components/resumen/resumen.component';
 
 
 
@@ -33,7 +35,9 @@ import {MaterialModule} from './modules/material/material.module'
     AdeudoComponent,
     ClienteAMComponent,
     EmpleadoAMComponent,
-    ProductoAMComponent
+    ProductoAMComponent,
+    ItemVentaComponent,
+    ResumenComponent
   ],
   imports: [
     BrowserModule,
@@ -43,6 +47,9 @@ import {MaterialModule} from './modules/material/material.module'
     MaterialModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [
+    ResumenComponent
+  ],
 })
 export class AppModule { }
