@@ -8,8 +8,13 @@ import {MatInputModule} from '@angular/material/input';
 import {MatIconModule} from '@angular/material/icon';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatDialogModule} from '@angular/material/dialog';
-
-
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatMenuModule} from '@angular/material/menu';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import {MatSliderModule} from '@angular/material/slider';
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
+import {MatCardModule} from '@angular/material/card';
 
 
 @NgModule({
@@ -23,9 +28,14 @@ import {MatDialogModule} from '@angular/material/dialog';
     MatInputModule,
     MatIconModule,
     MatTabsModule,
-    MatDialogModule
-    
-    
+    MatDialogModule,
+    MatSidenavModule,
+    MatDatepickerModule,
+    MatMenuModule,
+    MatCheckboxModule,
+    MatSliderModule,
+    MatButtonToggleModule,
+    MatCardModule
   ],
   exports:
   [
@@ -36,7 +46,14 @@ import {MatDialogModule} from '@angular/material/dialog';
     MatInputModule,
     MatIconModule,
     MatTabsModule,
-    MatDialogModule
+    MatDialogModule,
+    MatSidenavModule,
+    MatDatepickerModule,
+    MatMenuModule,
+    MatCheckboxModule,
+    MatSliderModule,
+    MatButtonToggleModule,
+    MatCardModule
     
   ]
 })

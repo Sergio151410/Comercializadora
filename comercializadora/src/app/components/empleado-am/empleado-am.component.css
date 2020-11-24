@@ -1,6 +1,6 @@
 .tamImg{
-    width: 25px;
-    height: 25px;   
+    width: 40px;
+    height: 40px;   
 }
 
 .colorB{
@@ -19,3 +19,18 @@
     width: 18px;
     height: 18px;
 }
+
+
+.example-form {
+    min-width: 100px;
+    max-width: 900px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+  
+  td {
+    padding-right: 8px;
+  }

@@ -37,7 +37,8 @@ import { ResumenComponent } from './components/resumen/resumen.component';
     EmpleadoAMComponent,
     ProductoAMComponent,
     ItemVentaComponent,
-    ResumenComponent
+    ResumenComponent,
+    ProductoAMComponent
   ],
   imports: [
     BrowserModule,

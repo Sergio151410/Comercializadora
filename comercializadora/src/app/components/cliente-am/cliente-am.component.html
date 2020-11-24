@@ -1,67 +1,94 @@
-<div class="col-lg-10" style="background: url('../../assets/img/logoMA.png'); width: 100%; height: 50vh;">
-    <h3> 
-        <img src="../../assets/img/agenda.png" alt="logoCliente" class="tamImg">
-        Cliente
-    </h3>
+<app-menu></app-menu>
+<div class="container">
+<h3> 
+    <img src="../../../assets/img/agenda.png" alt="logoCliente" class="tamImg">
+    Cliente
+</h3>
 
-    <form action="">
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xl-12">
-            <h4>Datos personales</h4>
-        </div>
+<form class="example-form">
+    <mat-form-field class="example-full-width">
+      <input matInput disabled value="Datos del cliente">
+    </mat-form-field>
+  
+    <table class="example-full-width" cellspacing="0">
+    <tr>
+        <td>
+            <mat-form-field class="example-full-width">
+            <mat-label>RFC</mat-label>
+            <input matInput>
+            </mat-form-field>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <mat-form-field class="example-full-width">
+            <mat-label>Nombre</mat-label>
+            <input matInput>
+            </mat-form-field>
+        </td>
 
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xl-4">
-            <label for="nombreC">Nombre*:</label>
-            <input type="text" class="form-control" id="nombreC" >
-        </div>
+        <td>
+            <mat-form-field class="example-full-width">
+            <mat-label>Apellido Paterno</mat-label>
+            <input matInput>
+            </mat-form-field>
+        </td>
+        <td>
+            <mat-form-field class="example-full-width">
+            <mat-label>Apellido Materno</mat-label>
+            <input matInput>
+            </mat-form-field>
+        </td>
+    </tr>
 
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xl-4">
-            <label for="aPaternoC">Apellido Paterno*:</label>
-            <input type="text" class="form-control" id="aPaternoC" >
-        </div>
+    
+    <tr>
+        <td>
+            <mat-form-field class="example-full-width">
+            <mat-label>Calle</mat-label>
+            <input matInput>
+            </mat-form-field>
+        </td>
 
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xl-4">
-            <label for="aMaternoC">Apellido Materno*:</label>
-            <input type="text" class="form-control" id="aMaternoC">
-        </div>
+        <td>
+            <mat-form-field class="example-full-width">
+            <mat-label>Colonia</mat-label>
+            <input matInput>
+            </mat-form-field>
+        </td>
+        <td>
+            <mat-form-field class="example-full-width">
+            <mat-label>Numero</mat-label>
+            <input matInput #postalCode maxlength="5" placeholder="">
+            <mat-hint align="end">{{postalCode.value.length}} / 5</mat-hint>
+            </mat-form-field>
+        </td>
+    </tr>
 
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xl-4">
-            <label for="telefonoC">Telefono:</label>
-            <input type="tel" class="form-control" id="telefonoC">
-        </div>
 
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xl-12">
-            <h4>Dirección</h4>
-        </div>
-
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xl-4">
-            <label for="calleC">Calle*:</label>
-            <input type="text" class="form-control" id="calle">
-        </div>
-
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xl-4">
-            <label for="coloniaC">Colonia*:</label>
-            <input type="text" class="form-control" id="coloniaC">
-        </div>
-
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xl-4">
-            <label for="num">Número*:</label>
-            <input type="number" class="form-control" id="num">
-        </div>
-
-        <br><br><br><br><br><br>
-
-        <div class="col-md-12 col-sm-12 col-lg-12 col-xl-12" style="text-align:right;">
-            <button type="button" class="btn btn-success">
-                <img src="../../assets/img/aceptar.png" class="tamId">
-                Aceptar
-            </button>
-            
-            <a routerLink='/cliente' class="btn btn-danger">
-                <img src="../../assets/img/cancelar.png" class="tamId">
-                Cancelar
-            </a>
-        </div>
-        
-</form>
-
+    <tr>
+        <td>
+            <mat-form-field class="example-full-width">
+            <mat-label>Télefono</mat-label>
+            <span matPrefix>+54 &nbsp;</span>
+            <input type="tel" matInput placeholder="">
+            <mat-icon matSuffix>mode_edit</mat-icon>
+            </mat-form-field>
+        </td>
+    </tr>
+</table>
+  
+<div style="text-align-last: center;">
+        <button type="button" class="btn btn-success">
+            <img src="../../assets/img/aceptar.png" class="tamId">
+            Aceptar
+        </button>
+        &nbsp;
+        <a routerLink='/empleado' class="btn btn-danger">
+            <img src="../../assets/img/cancelar.png" class="tamId">
+            Cancelar
+        </a>
+    </div>
+  </form>
+  
 </div>
