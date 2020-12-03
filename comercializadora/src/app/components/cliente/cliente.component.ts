@@ -90,6 +90,5 @@ function createNewUser(id: number): UserData {
     id: id.toString(),
     nombre: nombre,  
   };
-  
-}
 
+}
