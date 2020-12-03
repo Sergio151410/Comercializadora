@@ -8,9 +8,13 @@ import Swal from 'sweetalert2';
 })
 export class PrincipalComponent implements OnInit {
 
-  constructor() { }
+  loader:boolean;
+  constructor() {
+    this.loader = true;
+   }
 
   ngOnInit(): void {
+    this.loader = false;
   }
 
    prueba(e){

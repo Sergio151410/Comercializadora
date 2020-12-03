@@ -16,15 +16,15 @@ export class ResumenComponent implements OnInit {
   DETALLE_DATA: IDetalle[] = [
   ];
   constructor(@Inject(MAT_DIALOG_DATA) public detalle:{detalle:IVenta[]}) { 
+    
     this.DETALLE_DATA.push({venta: this.detalle.detalle});
   }
 
   ngOnInit(): void {
-    
     console.log('alias '+ JSON.stringify(this.DETALLE_DATA));
   }
 
-  displayedColumns: string[] = ['fruta'];
+  displayedColumns: string[] = ['No.'];
   dataSource = this.DETALLE_DATA;
 
 }

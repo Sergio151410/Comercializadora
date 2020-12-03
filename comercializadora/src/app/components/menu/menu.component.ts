@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { MenuService } from 'src/app/services/menu.service';
 
 
 @Component({
@@ -12,10 +14,14 @@ export class MenuComponent implements OnInit {
 
   shouldRun = [/(^|\.)plnkr\.co$/, /(^|\.)stackblitz\.io$/].some(h => h.test(window.location.host));
 
-  constructor() { }
+  constructor(private menuService:MenuService,private router:Router) { }
 
   ngOnInit(): void {
     
   }
   
+  toggle(url) {
+    this.menuService.menuEvento$.emit("Cambio de pestaña");
+    this.router.navigate([url]);
+  }
 }

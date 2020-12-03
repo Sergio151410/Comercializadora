@@ -1,33 +1,26 @@
-<mat-drawer-container class="example-container" >
-    <mat-drawer #drawer class="" mode="side">
-    <a routerLink='/principal' class="list-group-item color">
+<div class="example-container">
+
+    <a class="list-group-item color" (click)="toggle('/principal')">
         <img src="../../assets/img/inicio.png" alt="logo inicio" class="tamI"> INICIO
     </a>
-    <a routerLink='/cliente' class="list-group-item color">
-        <img src="../../assets/img/agenda.png" alt="logo inicio" class="tamI"> CLIENTE
+    <a class="list-group-item color" (click)="toggle('/cliente')">
+        <img src=" ../../assets/img/agenda.png " alt="logo inicio " class="tamI "> CLIENTE
     </a>
-  
-    <a routerLink='/empleado' class="list-group-item color">
-        <img src="../../assets/img/empleado.png" alt="logo inicio" class="tamI"> EMPLEADO
+
+    <a class="list-group-item color " (click)="toggle('/empleado')">
+        <img src="../../assets/img/empleado.png " alt="logo inicio " class="tamI "> EMPLEADO
     </a>
-  
-    <a routerLink='/producto' class="list-group-item color">
-        <img src="../../assets/img/frutas.png" alt="logo inicio" class="tamI"> PRODUCTO
+
+    <a class="list-group-item color " (click)="toggle('/producto')">
+        <img src="../../assets/img/frutas.png " alt="logo inicio " class="tamI "> PRODUCTO
     </a>
-  
-    <a routerLink='/venta' class="list-group-item color">
-        <img src="../../assets/img/punto-de-venta.png" alt="logo inicio" class="tamI"> VENTA
+
+    <a class="list-group-item color " (click)="toggle('/venta')">
+        <img src="../../assets/img/punto-de-venta.png " alt="logo inicio " class="tamI "> VENTA
     </a>
-  
-    <a routerLink='/adeudo' class="list-group-item color">
-        <img src="../../assets/img/pago.png" alt="logo inicio" class="tamI"> ADEUDOS
+
+    <a class="list-group-item color " (click)="toggle('/adeudo')">
+        <img src="../../assets/img/pago.png " alt="logo inicio " class="tamI "> ADEUDOS
     </a>
-    </mat-drawer>
-  
-    <div class="  ">
-      <button type="button" mat-button (click)="drawer.toggle()">
-        Menu
-      </button>
-    </div>
-  
-  </mat-drawer-container>
+
+</div>

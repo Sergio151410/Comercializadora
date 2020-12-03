@@ -30,6 +30,8 @@ export class ClienteComponent  implements AfterViewInit {
   @ViewChild(MatPaginator) paginator: MatPaginator;
   @ViewChild(MatSort) sort: MatSort;
 
+  
+  
   constructor(private router:Router) {
     // Create 100 users
     const users = Array.from({length: 100}, (_, k) => createNewUser(k + 1));
@@ -38,6 +40,9 @@ export class ClienteComponent  implements AfterViewInit {
     this.dataSource = new MatTableDataSource(users);
   }
 
+
+
+  
   ngAfterViewInit() {
     this.dataSource.paginator = this.paginator;
     this.dataSource.sort = this.sort;
